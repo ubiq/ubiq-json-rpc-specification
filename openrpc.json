@@ -2,7 +2,7 @@
     "openrpc": "1.0.0",
     "info": {
       "version": "1.0.10",
-      "title": "Ethereum JSON-RPC",
+      "title": "Ubiq JSON-RPC",
       "description": "This API lets you interact with an EVM-based client via JSON-RPC",
       "license": {
         "name": "Apache 2.0",
@@ -12,8 +12,7 @@
     "methods": [
       {
         "name": "web3_clientVersion",
-        "description": "Returns the version of the current client",
-        "summary": "current client version",
+        "summary": "Returns the version of the current client.",
         "params": [],
         "result": {
           "name": "clientVersion",
@@ -26,8 +25,7 @@
       },
       {
         "name": "web3_sha3",
-        "summary": "Hashes data",
-        "description": "Hashes data using the Keccak-256 algorithm",
+        "summary": "Hashes data using the Keccak-256 algorithm.",
         "params": [
           {
             "name": "data",
@@ -65,7 +63,7 @@
       },
       {
         "name": "net_listening",
-        "summary": "returns listening status",
+        "summary": "Returns listening status.",
         "description": "Determines if this client is listening for new network connections.",
         "params": [],
         "result": {
@@ -90,8 +88,7 @@
       },
       {
         "name": "net_peerCount",
-        "summary": "number of peers",
-        "description": "Returns the number of peers currently connected to this client.",
+        "summary": "Returns the number of peers currently connected to this client.",
         "params": [],
         "result": {
           "name": "quantity",
@@ -105,8 +102,7 @@
       },
       {
         "name": "net_version",
-        "summary": "Network ID associated with network",
-        "description": "Returns the network ID associated with the current network.",
+        "summary": "Returns the network ID associated with the current network.",
         "params": [],
         "result": {
           "name": "networkID",
@@ -147,7 +143,7 @@
       },
       {
         "name": "eth_chainId",
-        "summary": "Returns the currently configured chain id",
+        "summary": "Returns the currently configured chain id.",
         "description": "Returns the currently configured chain id, a value used in replay-protected transaction signing as introduced by [EIP-155](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-155.md).",
         "params": [],
         "result": {
@@ -174,7 +170,8 @@
       },
       {
         "name": "eth_estimateGas",
-        "summary": "Generates and returns an estimate of how much gas is necessary to allow the transaction to complete. The transaction will not be added to the blockchain. Note that the estimate may be significantly more than the amount of gas actually used by the transaction, for a variety of reasons including EVM mechanics and node performance.",
+        "summary": "Generates and returns an estimate of how much gas is necessary to allow the transaction to complete.",
+        "description": "Generates and returns an estimate of how much gas is necessary to allow the transaction to complete. The transaction will not be added to the blockchain. Note that the estimate may be significantly more than the amount of gas actually used by the transaction, for a variety of reasons including EVM mechanics and node performance.",
         "params": [
           {
             "$ref": "#/components/contentDescriptors/Transaction"
@@ -190,7 +187,7 @@
       },
       {
         "name": "eth_gasPrice",
-        "summary": "Returns the current price per gas in wei",
+        "summary": "Returns the current price per gas in wei.",
         "params": [],
         "result": {
           "$ref": "#/components/contentDescriptors/GasPrice"
@@ -198,7 +195,7 @@
       },
       {
         "name": "eth_getBalance",
-        "summary": "Returns Ether balance of a given or account or contract",
+        "summary": "Returns Ubiq balance of a given or account or contract in wei.",
         "params": [
           {
             "name": "address",
@@ -233,7 +230,7 @@
       },
       {
         "name": "eth_getBlockByHash",
-        "summary": "Gets a block for a given hash",
+        "summary": "Gets a block for a given hash.",
         "params": [
           {
             "name": "blockHash",
@@ -269,7 +266,7 @@
       },
       {
         "name": "eth_getBlockByNumber",
-        "summary": "Gets a block for a given number salad",
+        "summary": "Gets a block for a given number salad.",
         "params": [
           {
             "$ref": "#/components/contentDescriptors/BlockNumber"
@@ -811,7 +808,7 @@
                     "$ref": "#/components/schemas/AccountProof"
                   },
                   "balance": {
-                    "description": "The Ether balance of the account or contract of the request",
+                    "description": "The Ubiq balance of the account or contract of the request",
                     "$ref": "#/components/schemas/Integer"
                   },
                   "codeHash": {
@@ -918,7 +915,7 @@
       },
       {
         "name": "eth_pendingTransactions",
-        "summary": "Returns the pending transactions list",
+        "summary": "Returns the pending transactions list.",
         "params": [],
         "result": {
           "name": "pendingTransactions",
@@ -932,12 +929,12 @@
       },
       {
         "name": "eth_protocolVersion",
-        "summary": "Returns the current ethereum protocol version.",
+        "summary": "Returns the current ubiq protocol version.",
         "params": [],
         "result": {
           "name": "protocolVersion",
           "schema": {
-            "description": "The current ethereum protocol version",
+            "description": "The current ubiq protocol version",
             "$ref": "#/components/schemas/Integer"
           }
         }
@@ -1556,7 +1553,7 @@
               "$ref": "#/components/schemas/IntOrPending"
             },
             "value": {
-              "description": "Value of Ether being transferred in Wei",
+              "description": "Value of Ubiq being transferred in Wei",
               "$ref": "#/components/schemas/Keccak"
             },
             "v": {
