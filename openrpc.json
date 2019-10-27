@@ -119,7 +119,9 @@
         "summary": "Returns the number of most recent block.",
         "params": [],
         "result": {
-          "$ref": "#/components/contentDescriptors/BlockNumber"
+          "schema": {
+            "$ref": "#/components/schemas/BlockNumber"
+          }
         }
       },
       {
