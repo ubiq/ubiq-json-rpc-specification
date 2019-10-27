@@ -195,7 +195,7 @@
       },
       {
         "name": "eth_getBalance",
-        "summary": "Returns Ubiq balance of a given or account or contract in wei.",
+        "summary": "Returns the UBQ balance of a given account or contract in wei.",
         "params": [
           {
             "name": "address",
@@ -206,11 +206,7 @@
             }
           },
           {
-            "name": "blockNumber",
-            "description": "A BlockNumber at which to request the balance",
-            "schema": {
-              "$ref": "#/components/schemas/BlockNumber"
-            }
+            "$ref": "#/components/contentDescriptors/BlockNumber"
           }
         ],
         "result": {
@@ -357,11 +353,7 @@
             }
           },
           {
-            "name": "blockNumber",
-            "description": "A BlockNumber of which the code existed",
-            "schema": {
-              "$ref": "#/components/schemas/BlockNumber"
-            }
+            "$ref": "#/components/contentDescriptors/BlockNumber"
           }
         ],
         "result": {
@@ -1179,7 +1171,7 @@
         },
         "BlockNumberTag": {
           "type": "string",
-          "description": "The optional block height description",
+          "description": "The block's height description",
           "enum": [
             "earliest",
             "latest",
