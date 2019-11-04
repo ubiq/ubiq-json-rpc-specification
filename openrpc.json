@@ -119,6 +119,7 @@
         "summary": "Returns the number of most recent block.",
         "params": [],
         "result": {
+          "name": "blockNumber",
           "schema": {
             "$ref": "#/components/schemas/BlockNumber"
           }
