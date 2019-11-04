@@ -92,11 +92,8 @@
       "params": [],
       "result": {
         "name": "quantity",
-        "description": "number of connected peers.",
         "schema": {
-          "title": "numConnectedPeers",
-          "description": "Hex representation of number of connected peers",
-          "type": "string"
+          "$ref": "#/components/schemas/Integer"
         }
       }
     },
